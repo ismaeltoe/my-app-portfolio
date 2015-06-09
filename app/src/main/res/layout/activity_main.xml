@@ -28,7 +28,8 @@
             android:text="@string/media_streamer"
             android:layout_below="@id/textView"
             android:background="@color/orange"
-            android:layout_marginTop="40dp" />
+            android:layout_marginTop="40dp"
+            android:onClick="showToast" />
 
         <Button
             android:id="@+id/button2"
@@ -37,7 +38,8 @@
             android:text="@string/super_duo1"
             android:layout_below="@id/button"
             android:background="@color/orange"
-            android:layout_marginTop="@dimen/marginTop" />
+            android:layout_marginTop="@dimen/marginTop"
+            android:onClick="showToast" />
 
         <Button
             android:id="@+id/button3"
@@ -46,7 +48,8 @@
             android:text="@string/super_duo2"
             android:layout_below="@id/button2"
             android:background="@color/orange"
-            android:layout_marginTop="@dimen/marginTop" />
+            android:layout_marginTop="@dimen/marginTop"
+            android:onClick="showToast" />
 
         <Button
             android:id="@+id/button4"
@@ -55,7 +58,8 @@
             android:text="@string/ant_terminator"
             android:layout_below="@id/button3"
             android:background="@color/orange"
-            android:layout_marginTop="@dimen/marginTop" />
+            android:layout_marginTop="@dimen/marginTop"
+            android:onClick="showToast" />
 
         <Button
             android:id="@+id/button5"
@@ -64,7 +68,8 @@
             android:text="@string/materialize"
             android:layout_below="@id/button4"
             android:background="@color/orange"
-            android:layout_marginTop="@dimen/marginTop" />
+            android:layout_marginTop="@dimen/marginTop"
+            android:onClick="showToast" />
 
         <Button
             android:id="@+id/button6"
@@ -74,7 +79,8 @@
             android:text="@string/capstone"
             android:background="@android:color/holo_red_dark"
             android:textColor="@android:color/white"
-            android:layout_marginTop="@dimen/marginTop" />
+            android:layout_marginTop="@dimen/marginTop"
+            android:onClick="showToast" />
 
     </RelativeLayout>
 </ScrollView>
