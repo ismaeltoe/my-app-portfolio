@@ -9,6 +9,8 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    private Toast mAppToast;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,11 +25,14 @@ public class MainActivity extends AppCompatActivity {
             case R.id.button4:
             case R.id.button5:
             case R.id.button6:
-                Toast.makeText(
-                        MainActivity.this,
+                if(mAppToast !=null) {
+                    mAppToast.cancel();
+                }
+                mAppToast = Toast.makeText(
+                        this,
                         ((Button)v).getText().toString(),
-                        Toast.LENGTH_SHORT
-                ).show();
+                        Toast.LENGTH_SHORT);
+                mAppToast.show();
                 break;
             default:
                 break;
